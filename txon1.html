@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--vimp to work up the dflex bs classnames-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img class="icon" src="https://w7.pngwing.com/pngs/952/666/png-transparent-harry-potter-logo-harry-potter-and-the-chamber-of-secrets-harry-potter-and-the-philosopher-s-stone-harry-potter-and-the-prisoner-of-azkaban-albus-dumbledore-harry-potter-logo-miscellaneous-quidditch-james-thumbnail.png" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="#gotoaboutme">About Me <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#gotoeducn">Education </a>
+                <a class="nav-link" href="#gotowork">Work </a>
+                <a class="nav-link" href="#gotoachievements">Achievements </a>
+
+
+            </div>
+        </div>
+    </nav>
+    <!--nav ended-->
+    <div id="section1">
+        <div class="bg d-flex flex-column justify-content-center">
+            <div class="card">
+                <h1> Welcome to My Portfolio </h1>
+                <p> I am <span style="color:blue"> Hasini Preetham</span> , skilled at Front end technologies
+                    I have explored and enhanced my skills in web based Technologies </p>
+                <p> Let's dive into my portfolio </p>
+                <img src="https://thumbs.dreamstime.com/z/man-holding-digital-tablet-business-skills-concept-man-holding-digital-tablet-business-skills-concept-135398516.jpg" class="fitpic" />
+                <button class="btn bg-info text-white m-3 mb-5 pb-3 btry text-center" onclick="display('section2')"> Start </button>
+            </div>
+        </div>
+    </div>
+    <div id="section2">
+        <div class="d-flex flex-row ">
+            <!--col-6 is responsive web design, out of 12 total columns each to occupy 6columns-->
+            <img class="fitpic col-6" src="https://digikids.co.ke/wp-content/uploads/2019/05/html2.jpg" />
+            <img class="fitpic col-6" src="https://play-lh.googleusercontent.com/PAPuQveK8eeVwh7M4vccotAFPOJI0sENMWxnFe9RDt-_63SfVRiLUNXcpJ-8iHuVng=w240-h480-rw" />
+        </div>
+        <div class="d-flex flex-row">
+            <img class="fitpic col-6" src="https://cdn.thenewstack.io/media/2022/06/57e0003d-600b72f9-react-1024x680-1.png" />
+            <img class="fitpic col-6" src="data:image/png;base64,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" />
+        </div>
+        <div class="d-flex flex-row">
+            <img class="fitpic col-6" src="data:image/png;base64,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" />
+            <img class="fitpic col-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ig8Yjy3r4EDfR5VdxDng64lIAxZRCUHuQg&usqp=CAU" />
+        </div>
+        <button class="btn bg-primary text-white m-5" onclick="display('section1')"> Back</button>
+    </div>
+
+    <!--nav related itself contains anchor tags and img ele kept as icon-->
+    <div>
+        <div id="gotoaboutme">
+            <h1 class="heading"> About Me :</h1>
+            <img src="https://res.cloudinary.com/dxhzipms3/image/upload/v1673610990/IMG_20230113_172504_iqeg8i.jpg" class="books" />
+            <p>I am an affable,spruce,lass full of vigor and elan.A Magnamious soul,
+                with empathy and gratitude.
+                A bit against today's way of life,encroaching on the Mother Earth for greedy needs,
+                So I always identify as Luddite for being proPlanet. Typically also a
+                Luminary's acolyte as I often try to emulate suucessful people who inspire me </P>
+        </div>
+        <br />
+        <div id="gotoeducn">
+
+            <h1 class="heading"> Education Qualification </h1>
+            <img class="books" src="https://i.pinimg.com/736x/97/81/7d/97817dedb16616599a6380619c602d2e.jpg" />
+            <li> Full stack trainee at CCBP</li>
+            <li> Pursuing MA- Sociology at IGNOU </li>
+            <li> B.Tech in EEE </li>
+        </div>
+        <br />
+        <div id="gotowork">
+            <h1 class="heading"> Professional Experience </h1>
+            <img class="books" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3R-pqgmd6JFalP6PVY75HOyR5klMfLLndZkFc_mM&s" />
+            <li> Internship on Web design at TXON,IT services Ltd </li>
+            <li> Served in the MUAD- Administrative dept under the Goverment of AndhraPradesh</li>
+            <li> Worked as System Analyst at Capgemini,Banglore</li>
+
+        </div>
+        <br />
+        <div id="gotoachievements">
+            <h1 class="heading">Achievements </h1>
+            <img class="books" src="https://media.istockphoto.com/id/1256671318/vector/reach-star.jpg?s=612x612&w=0&k=20&c=HTRRvRR8dNL2uTRnnqPw0C9KjtzK8Mw4d19InHnGyQk=" />
+            <li> Successively topped at levels of educational trajectory </li>
+            <li> Actively took part in NCC- National Cadets Corps as best Cadet </li>
+            <li> Academic excellence endorsed by having conferred GoldMedal by Ex-IAS,JP sir in my 10th class</li>
+        </div>
+        <!--33 to 60 is webpgd integration using ccbpUIkit script tag jus above end body tag-->
+
+    </div>
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
